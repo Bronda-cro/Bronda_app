@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Bronda Crochet</title>
+<meta name="description" content="Organizador de patrones, proyectos e ideas de Bronda Crochet" />
+<meta name="theme-color" content="#f2e9d2" />
+<meta name="color-scheme" content="light dark" />
+<meta name="darkreader-lock" />
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="icon" type="image/png" href="icons/icon-192.png" />
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Bronda" />
+<script>try{var p=localStorage.getItem("bronda:theme")||"auto";var d=p==="dark"||(p==="auto"&&window.matchMedia("(prefers-color-scheme: dark)").matches);document.documentElement.setAttribute("data-theme",d?"dark":"light");}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="config.js"></script>
+<style>
+  :root { box-sizing: border-box; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); height: 100%; }
+  html[data-theme="dark"], html[data-theme="dark"] body { background: #1d1814; }
+  body { margin: 0; height: 100%; background: var(--c-bg, #f2e9d2); font-family: 'Be Vietnam Pro', sans-serif; }
+  * { box-sizing: border-box; }
+  ::-webkit-scrollbar { display: none; }
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); background: var(--c-bg, #f2e9d2); z-index: 60; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="backend.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
