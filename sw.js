@@ -1,5 +1,5 @@
 // Service worker: deja la app abrir rápido y funcionar sin señal (la parte visual).
-const CACHE = "bronda-v1";
+const CACHE = "bronda-v2";
 self.addEventListener("install", (e) => { self.skipWaiting(); });
 self.addEventListener("activate", (e) => {
   e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
